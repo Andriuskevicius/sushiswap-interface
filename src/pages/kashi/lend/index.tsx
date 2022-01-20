@@ -40,7 +40,10 @@ function Lend() {
           content="Kashi is a lending and margin trading platform, built upon BentoBox, which allows for anyone to create customized and gas-efficient markets for lending, borrowing, and collateralizing a variety of DeFi tokens, stable coins, and synthetic assets."
         />
       </Head>
-      <Card className="h-full bg-dark-900" header={<MarketHeader type="Lending" lists={[pairs, positions]} />}>
+      <Card
+        className="h-full bg-dark-900 border border-bcolor"
+        header={<MarketHeader type="Lending" lists={[pairs, positions]} />}
+      >
         {positions.items && positions.items.length > 0 && (
           <div className="pb-4">
             <div>
@@ -147,7 +150,7 @@ const LendEntry = ({ pair, userPosition = false }) => {
   return (
     <Link href={'/lend/' + pair.address}>
       <a className="block text-high-emphesis">
-        <div className="grid items-center grid-flow-col grid-cols-4 gap-4 px-4 py-4 text-sm rounded md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-800 hover:bg-dark-blue">
+        <div className="grid items-center grid-flow-col grid-cols-4 gap-4 px-4 py-4 text-sm rounded-md md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-700 hover:bg-dark-blue">
           <div className="flex flex-col items-start sm:flex-row sm:items-center">
             <div className="hidden space-x-2 md:flex">
               <Image
@@ -220,7 +223,7 @@ const LendLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="/deposit-graphic.png"
           title={i18n._(t`Lend your assets, earn yield with no impermanent loss`)}
           description={i18n._(

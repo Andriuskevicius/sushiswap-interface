@@ -20,7 +20,7 @@ const FarmListItem = ({ farm, ...rest }) => {
           <Disclosure.Button
             className={classNames(
               open && 'rounded-b-none',
-              'w-full px-4 py-6 text-left rounded cursor-pointer select-none bg-dark-900 text-primary text-sm md:text-lg'
+              'w-full px-4 py-6 text-left rounded cursor-pointer select-none bg-dark-700 text-primary text-sm md:text-lg'
             )}
           >
             <div className="grid grid-cols-4">
@@ -34,7 +34,7 @@ const FarmListItem = ({ farm, ...rest }) => {
                     </span>
                   </div>
                   {farm?.pair?.type === PairType.SWAP && (
-                    <div className="text-xs md:text-base text-secondary">SushiSwap Farm</div>
+                    <div className="text-xs md:text-base text-secondary">123Swap Farm</div>
                   )}
                   {farm?.pair?.type === PairType.KASHI && (
                     <div className="text-xs md:text-base text-secondary">Kashi Farm</div>

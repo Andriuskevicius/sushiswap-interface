@@ -56,7 +56,7 @@ function Pair() {
         />
       </Head>
       <Card
-        className="h-full bg-dark-900"
+        className="h-full bg-dark-900 border border-bcolor"
         header={
           <Card.Header className="border-b-8 bg-dark-pink border-pink">
             <div className="flex items-center">
@@ -172,7 +172,7 @@ const PairLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="/borrow-graphic.png"
           title={i18n._(t`Add collateral in order to borrow assets`)}
           description={i18n._(
@@ -181,7 +181,7 @@ const PairLayout = ({ children }) => {
         />
       }
       right={
-        <Card className="h-full bg-dark-900">
+        <Card className="h-full bg-dark-900 border border-bcolor">
           <div className="flex-col space-y-2">
             <div className="flex justify-between">
               <div className="text-xl text-high-emphesis">{i18n._(t`Market`)}</div>

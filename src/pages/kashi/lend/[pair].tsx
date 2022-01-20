@@ -30,7 +30,7 @@ export default function Pair() {
         <meta key="description" name="description" content={`Lend ${pair.asset.tokenInfo.symbol} on Kashi`} />
       </Head>
       <Card
-        className="h-full bg-dark-900"
+        className="h-full bg-dark-900 border border-bcolor"
         header={
           <Card.Header className="border-b-8 bg-dark-blue border-blue">
             <div className="flex items-center">
@@ -136,7 +136,7 @@ const PairLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="/deposit-graphic.png"
           title={i18n._(t`Lend assets for interest from borrowers.`)}
           description={i18n._(
@@ -145,7 +145,7 @@ const PairLayout = ({ children }) => {
         />
       }
       right={
-        <Card className="h-full bg-dark-900">
+        <Card className="h-full bg-dark-900 border border-bcolor">
           <div className="flex-col space-y-2">
             <div className="flex justify-between">
               <div className="text-xl text-high-emphesis">{i18n._(t`Market`)}</div>

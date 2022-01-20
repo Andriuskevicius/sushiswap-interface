@@ -39,13 +39,13 @@ function Balances() {
   return (
     <>
       <Head>
-        <title>Balances | Sushi</title>
+        <title>Balances | 123Swap</title>
         <meta key="description" name="description" content="" />
       </Head>
       <Card
-        className="h-full bg-dark-900"
+        className="h-full bg-dark-900 border border-bcolor"
         header={
-          <Card.Header className="flex items-center justify-between bg-dark-800">
+          <Card.Header className="flex items-center justify-between">
             <div className="flex flex-col items-center justify-between w-full md:flex-row">
               <div className="flex items-baseline">
                 <div className="mr-4 text-3xl text-high-emphesis">{i18n._(t`BentoBox`)}</div>
@@ -78,7 +78,7 @@ const BalancesLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="bento-illustration.png"
           title={i18n._(t`Deposit tokens into BentoBox for all the yields`)}
           description={i18n._(

@@ -41,7 +41,10 @@ function Borrow() {
           content="Kashi is a lending and margin trading platform, built upon BentoBox, which allows for anyone to create customized and gas-efficient markets for lending, borrowing, and collateralizing a variety of DeFi tokens, stable coins, and synthetic assets."
         />
       </Head>
-      <Card className="h-full bg-dark-900" header={<MarketHeader type="Borrow" lists={[pairs, positions]} />}>
+      <Card
+        className="h-full bg-dark-900 border border-bcolor"
+        header={<MarketHeader type="Borrow" lists={[pairs, positions]} />}
+      >
         {positions.items && positions.items.length > 0 && (
           <div className="pb-4">
             <div>
@@ -96,7 +99,7 @@ function Borrow() {
                     <div key={pair.address}>
                       <Link href={'/borrow/' + pair.address}>
                         <a className="block text-high-emphesis">
-                          <div className="grid items-center grid-cols-4 gap-4 px-4 py-4 text-sm rounded md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-800 hover:bg-dark-pink">
+                          <div className="grid items-center grid-cols-4 gap-4 px-4 py-4 text-sm rounded-md md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-700 hover:bg-dark-pink">
                             <div className="hidden space-x-2 md:flex">
                               <Image
                                 loader={cloudinaryLoader}
@@ -200,7 +203,7 @@ function Borrow() {
                 <div key={pair.address}>
                   <Link href={'/borrow/' + String(pair.address).toLowerCase()}>
                     <a className="block text-high-emphesis">
-                      <div className="grid items-center grid-cols-4 gap-4 px-4 py-4 text-sm rounded md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-800 hover:bg-dark-pink">
+                      <div className="grid items-center grid-cols-4 gap-4 px-4 py-4 text-sm rounded-md md:grid-cols-6 lg:grid-cols-7 align-center bg-dark-700 hover:bg-dark-pink">
                         <div className="flex flex-col items-start sm:flex-row sm:items-center">
                           <div className="hidden space-x-2 md:flex">
                             <Image
@@ -282,7 +285,7 @@ const BorrowLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="/borrow-graphic.png"
           title={i18n._(t`Borrow assets and leverage up`)}
           description={i18n._(

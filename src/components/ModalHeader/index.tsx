@@ -25,7 +25,7 @@ const ModalHeader: FC<ModalHeaderProps> = ({
         </Typography>
       )}
       <div
-        className="flex items-center justify-center w-6 h-6 cursor-pointer text-primary hover:text-high-emphesis"
+        className="flex items-center justify-center w-[2rem] h-[2rem] p-[6px] cursor-pointer text-primary hover:text-high-emphesis border border-bcolor rounded-full"
         onClick={onClose}
       >
         <XIcon width={24} height={24} />

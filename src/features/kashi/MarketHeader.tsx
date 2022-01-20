@@ -15,9 +15,7 @@ function MarketHeader({ type = 'Borrow', lists }: any) {
   }
 
   return (
-    <Card.Header
-      className={classNames('border-b-8', type === 'Borrow' ? 'bg-dark-pink border-pink' : 'bg-dark-blue border-blue')}
-    >
+    <Card.Header className={classNames(type === 'Borrow' ? 'bg-dark-900' : 'bg-dark-900')}>
       <div className="flex flex-col items-center justify-between w-full md:flex-row">
         <div className="flex items-center">
           <div className="mr-4 text-3xl text-high-emphesis">{type}</div>
@@ -26,11 +24,11 @@ function MarketHeader({ type = 'Borrow', lists }: any) {
         <div className="flex justify-end w-full py-4 md:py-0">
           <div className="relative w-full max-w-md">
             <input
-              className={`py-3 pl-4 pr-14 rounded w-full focus:outline-none focus:ring ${
+              className={`py-3 pl-4 pr-14 rounded-md w-full focus:outline-none focus:ring ${
                 type === 'Borrow' ? 'focus:ring-pink' : 'focus:ring-blue'
               }`}
               onChange={(e) => onSearch(e.target.value)}
-              style={{ background: '#161522' }}
+              style={{ background: '#353945' }}
               value={lists[0].term}
               placeholder="Search by symbol"
             />

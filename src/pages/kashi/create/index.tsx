@@ -178,9 +178,9 @@ function Create() {
         <meta key="description" name="description" content="Create Lending Pair on Kashi by Sushi" />
       </Head>
       <Card
-        className="h-full bg-dark-900"
+        className="h-full bg-dark-900 border border-bcolor"
         header={
-          <Card.Header className="bg-dark-800">
+          <Card.Header className="">
             <div className="text-3xl text-high-emphesis leading-48px">Create a Market</div>
           </Card.Header>
         }
@@ -236,7 +236,7 @@ const CreateLayout = ({ children }) => {
     <Layout
       left={
         <Card
-          className="h-full bg-dark-900"
+          className="h-full bg-dark-900 border border-bcolor"
           backgroundImage="/deposit-graphic.png"
           title={i18n._(t`Create a new Kashi Market`)}
           description={i18n._(

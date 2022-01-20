@@ -31,7 +31,7 @@ const BalancePanel: FC = () => {
   )
 
   return (
-    <div className="grid grid-cols-2 bg-dark-700 rounded-b px-5 py-1">
+    <div className="grid grid-cols-2 rounded-b px-5 py-1">
       <div className="flex gap-2">
         <Typography variant="sm" weight={700}>
           {i18n._(t`In Bento:`)}

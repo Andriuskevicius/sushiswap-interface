@@ -73,7 +73,7 @@ export default function CurrencyInputPanel({
   }, [setModalOpen])
 
   return (
-    <div id={id} className={classNames(hideInput ? 'p-4' : 'p-5', 'rounded bg-dark-800')}>
+    <div id={id} className={classNames(hideInput ? 'p-4' : 'p-5', 'rounded-md bg-dark-900 border border-bcolor')}>
       <div className="flex flex-col justify-between space-y-3 sm:space-y-0 sm:flex-row">
         <div className={classNames('w-full sm:w-2/5')}>
           <button
@@ -121,7 +121,7 @@ export default function CurrencyInputPanel({
                           '...' +
                           currency.symbol.slice(currency.symbol.length - 5, currency.symbol.length)
                         : currency?.symbol) || (
-                        <div className="px-2 py-1 mt-1 text-xs font-medium bg-transparent border rounded-full hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap ">
+                        <div className="px-2 py-1 mt-1 text-xs font-medium bg-transparent border rounded-md hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap ">
                           {i18n._(t`Select a token`)}
                         </div>
                       )}
@@ -148,7 +148,7 @@ export default function CurrencyInputPanel({
                 <Button
                   onClick={onMax}
                   size="xs"
-                  className="text-xs font-medium bg-transparent border rounded-full hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap"
+                  className="text-xs font-medium bg-transparent border rounded-md hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap"
                 >
                   {i18n._(t`Max`)}
                 </Button>

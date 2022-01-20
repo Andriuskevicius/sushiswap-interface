@@ -93,7 +93,7 @@ export default function Pool() {
         <meta
           key="description"
           name="description"
-          content="SushiSwap liquidity pools are markets for trades between the two tokens, you can provide these tokens and become a liquidity provider to earn 0.25% of fees from trades."
+          content="123Swap liquidity pools are markets for trades between the two tokens, you can provide these tokens and become a liquidity provider to earn 0.25% of fees from trades."
         />
       </Head>
 
@@ -113,7 +113,7 @@ export default function Pool() {
         type="information"
       />
 
-      <div className="p-4 space-y-4 rounded bg-dark-900">
+      <div className="p-4 space-y-4 rounded border border-bcolor bg-dark-900">
         <div className="grid grid-flow-row gap-3">
           {!account ? (
             <Web3Connect size="lg" color="blue" className="w-full" />

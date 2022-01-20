@@ -27,7 +27,7 @@ export default function CurrencyInputPanel({
       {topAdornment && topAdornment}
       <div
         className={classNames(
-          'p-5 bg-dark-800 flex flex-col justify-between space-y-3 sm:space-y-0 sm:flex-row',
+          'p-5 border border-bcolor flex flex-col justify-between space-y-3 sm:space-y-0 sm:flex-row',
           className
         )}
       >

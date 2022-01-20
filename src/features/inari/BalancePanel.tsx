@@ -67,7 +67,7 @@ const BalancePanel: FC<BalancePanelProps> = ({ label, value, token, showMax = fa
         {showMax && (
           <span
             onClick={onMax}
-            className="cursor-pointer flex items-center rounded-full h-[30px] bg-blue bg-opacity-30 hover:border-opacity-100 border border-blue border-opacity-50 text-xs font-medium text-blue px-3"
+            className="cursor-pointer flex items-center rounded-md h-[30px] bg-blue bg-opacity-30 hover:border-opacity-100 border border-blue border-opacity-50 text-xs font-medium text-blue px-3"
           >
             {i18n._(t`Max`)}
           </span>

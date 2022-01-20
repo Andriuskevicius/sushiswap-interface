@@ -3,7 +3,7 @@ import { classNames } from '../../functions/styling'
 
 function Header({ className, children }) {
   return (
-    <div className={classNames('flex items-center rounded-t px-4 sm:px-8 py-4 sm:py-6', className)}>{children}</div>
+    <div className={classNames('flex items-center rounded-t-md px-4 sm:px-8 py-4 sm:py-6', className)}>{children}</div>
   )
 }
 

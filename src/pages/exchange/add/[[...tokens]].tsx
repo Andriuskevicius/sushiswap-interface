@@ -316,7 +316,7 @@ export default function Add() {
         <meta
           key="description"
           name="description"
-          content="Add liquidity to the SushiSwap AMM to enable gas optimised and low slippage trades across countless networks"
+          content="Add liquidity to the 123Swap AMM to enable gas optimised and low slippage trades across countless networks"
         />
       </Head>
 
@@ -370,7 +370,7 @@ export default function Add() {
         />
 
         <DoubleGlowShadow>
-          <div className="p-4 space-y-4 rounded bg-dark-900" style={{ zIndex: 1 }}>
+          <div className="p-10 border border-bcolor space-y-4 rounded bg-dark-900" style={{ zIndex: 1 }}>
             {/* <AddRemoveTabs creating={isCreate} adding={true} defaultSlippage={DEFAULT_ADD_V2_SLIPPAGE_TOLERANCE} /> */}
 
             <ExchangeHeader

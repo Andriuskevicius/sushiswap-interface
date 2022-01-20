@@ -16,7 +16,7 @@ function ListHeaderWithSort({
 }) {
   return (
     <div
-      className={`flex items-center cursor-pointer hover:text-primary ${className}`}
+      className={`flex items-center cursor-pointer text-dark-600 hover:text-primary ${className}`}
       onClick={() => sort.requestSort(sortKey, direction)}
     >
       {children}

@@ -39,7 +39,7 @@ const CurrencyInput: FC<CurrencyInputProps> = ({
           <Button
             onClick={onMax}
             size="xs"
-            className="text-xs font-medium bg-transparent border rounded-full hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap"
+            className="text-xs font-medium bg-transparent border rounded-md hover:bg-primary border-low-emphesis text-secondary whitespace-nowrap"
           >
             {i18n._(t`Max`)}
           </Button>

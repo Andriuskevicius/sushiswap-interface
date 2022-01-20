@@ -19,11 +19,11 @@ module.exports = {
           r: 'to right',
         },
         colors: {
-          'blue-pink': ['#27B0E6', '#FA52A0'],
-          'pink-red-light-brown': ['#FE5A75', '#FEC464'],
+          'blue-pink': ['rgb(235, 87, 87)', 'rgb(242, 153, 74)'],
+          'pink-red-light-brown': ['#rgb(235, 87, 87)', 'rgb(242, 153, 74)'],
         },
         background: {
-          'dark-1000': '#0D0415',
+          'dark-1000': '#141416',
           'dark-900': '#161522',
           'dark-800': '#202231',
           'dark-pink-red': '#4e3034',
@@ -37,27 +37,28 @@ module.exports = {
       },
       colors: {
         purple: '#a755dd',
-        blue: '#0993ec',
-        pink: '#f338c3',
+        blue: 'rgb(235, 87, 87)',
+        pink: 'rgb(242, 153, 74)',
         green: '#7cff6b',
         red: '#ff3838',
         yellow: '#ffd166',
 
-        'opaque-blue': '#0993ec80',
-        'opaque-pink': '#f338c380',
+        'opaque-blue': 'rgb(235, 87, 87)',
+        'opaque-pink': 'rgb(242, 153, 74)',
         'pink-red': '#FE5A75',
         'light-brown': '#FEC464',
         'light-yellow': '#FFD166',
         'cyan-blue': '#0993EC',
         'dark-pink': '#221825',
         'dark-blue': '#0F182A',
-        'dark-1000': '#0D0415',
-        'dark-900': '#161522',
+        'dark-1000': '#141416',
+        'dark-900': 'rgb(24, 25, 29)',
         'dark-850': '#1d1e2c',
         'dark-800': '#202231',
-        'dark-700': '#2E3348',
-        'dark-600': '#1C2D49',
+        'dark-700': '#353945',
+        'dark-600': '#777E90',
         'dark-500': '#223D5E',
+        bcolor: 'rgb(53, 57, 69)',
         'low-emphesis': '#575757',
         primary: '#BFBFBF',
         secondary: '#7F7F7F',
@@ -82,10 +83,11 @@ module.exports = {
       borderRadius: {
         none: '0',
         px: '1px',
-        DEFAULT: '0.625rem',
+        md: '8px',
+        DEFAULT: '16px',
       },
       boxShadow: {
-        swap: '0px 50px 250px -47px rgba(39, 176, 230, 0.29)',
+        swap: '0px 50px 250px -47px rgba(235, 87, 87, 0.29)',
         liquidity: '0px 50px 250px -47px rgba(123, 97, 255, 0.23)',
         'pink-glow': '0px 57px 90px -47px rgba(250, 82, 160, 0.15)',
         'blue-glow': '0px 57px 90px -47px rgba(39, 176, 230, 0.17)',
@@ -109,6 +111,9 @@ module.exports = {
       },
       minWidth: {
         5: '1.25rem',
+      },
+      maxWidth: {
+        max: '736px',
       },
       dropShadow: {
         currencyLogo: '0px 3px 6px rgba(15, 15, 15, 0.25)',
@@ -152,9 +157,13 @@ module.exports = {
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.header-border-b': {
-          background:
-            'linear-gradient(to right, rgba(39, 176, 230, 0.2) 0%, rgba(250, 82, 160, 0.2) 100%) left bottom no-repeat',
-          backgroundSize: '100% 1px',
+          background: 'rgb(20, 20, 22)',
+          backgroundSize: '100%',
+          borderBottom: '1px solid rgb(53, 57, 69)',
+          filter: 'contrast(1)',
+        },
+        '.bg-linear-swap': {
+          background: 'linear-gradient(to right, rgb(235, 87, 87), rgb(242, 153, 74) 100%) left bottom no-repeat',
         },
       })
     }),

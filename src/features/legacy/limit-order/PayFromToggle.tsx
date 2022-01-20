@@ -33,12 +33,12 @@ const PayFromToggle: FC = () => {
           <Switch
             checked={!fromBentoBalance}
             onChange={handleChange}
-            className="bg-gray-600 relative inline-flex items-center h-3 rounded-full w-9 transition-colors"
+            className="bg-gray-600 relative inline-flex items-center h-[20px] w-[40px] p-[2px] rounded-full w-9 transition-colors"
           >
             <span
               className={`${
                 !fromBentoBalance ? 'translate-x-5' : ''
-              } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
+              } inline-block w-[16px] h-[16px] transform bg-white rounded-full transition-transform`}
             />
           </Switch>
           <Switch.Label className="ml-2">

@@ -217,7 +217,7 @@ function LimitOrder() {
         <title>{i18n._(t`Limit order`)} | Sushi</title>
         <meta
           name="description"
-          content="SushiSwap allows for swapping of ERC20 compatible tokens across multiple networks"
+          content="123Swap allows for swapping of ERC20 compatible tokens across multiple networks"
         />
       </Head>
       <TokenWarningModal
@@ -233,11 +233,11 @@ function LimitOrder() {
         }}
       >
         <DoubleGlowShadow>
-          <div id="limit-order-page" className="flex flex-col gap-4 p-4 rounded bg-dark-900">
+          <div id="limit-order-page" className="flex flex-col gap-4 p-10 border border-bcolor rounded bg-dark-900">
             <ExchangeHeader input={currencies[Field.INPUT]} output={currencies[Field.OUTPUT]} />
             <div className="flex flex-col gap-4">
               <CurrencyInputPanel
-                className="rounded-t"
+                className="rounded-md"
                 id="swap-currency-input"
                 topAdornment={<PayFromToggle />}
                 bottomAdornment={<BalancePanel />}
