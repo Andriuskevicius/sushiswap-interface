@@ -390,7 +390,7 @@ export default function Swap() {
   const [animateSwapArrows, setAnimateSwapArrows] = useState<boolean>(false)
 
   return (
-    <Container id="swap-page" className="py-4  md:py-8 lg:py-12 lg:pt-24">
+    <Container id="swap-page" className="p-4 md:py-8 lg:py-12 lg:pt-24">
       <Head>
         <title>{i18n._(t`123Swap`)}</title>
         <meta
@@ -561,7 +561,7 @@ export default function Swap() {
         </div>
         {/* <Banner /> */}
       </DoubleGlowShadow>
-      <BottomGrouping>
+      <BottomGrouping className="md:max-w-[30%]">
         {swapIsUnsupported ? (
           <Button color="red" size="lg" disabled>
             {i18n._(t`Unsupported Asset`)}

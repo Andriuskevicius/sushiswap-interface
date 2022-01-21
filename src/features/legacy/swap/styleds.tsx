@@ -21,7 +21,6 @@ export const ArrowWrapper = styled.div<{ clickable: boolean }>`
 export const BottomGrouping = styled.div`
   margin: auto;
   margin-top: 2rem;
-  max-width: 30%;
 `
 
 export function SwapCallbackError({ error }: { error: ReactNode }) {

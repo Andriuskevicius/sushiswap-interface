@@ -21,9 +21,9 @@ function OpenOrdersPage() {
   const { pending } = useLimitOrders()
 
   return (
-    <Container id="open-order-page" className="py-4 md:py-8 lg:py-12" maxWidth="2xl">
+    <Container id="open-order-page" className="p-4 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Open Orders | Sushi</title>
+        <title>Open Orders | 123Swap</title>
         <meta name="description" content="Open orders..." />
       </Head>
       <div className="min-w-0 md:min-w-[672px]">

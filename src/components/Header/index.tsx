@@ -35,8 +35,15 @@ function AppBar(): JSX.Element {
           <>
             <div className="px-4 py-4">
               <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <Image src="/logo.png" alt="Sushi" width="190px" height="50px" />
+                <div className="flex items-center flex-row-reverse lg:flex-row">
+                  <Image src="/logo.png" alt="123Swap" width="190px" height="50px" className="!hidden lg:!block" />
+                  <Image
+                    src="/logo-mobile.png"
+                    alt="123Swap"
+                    width="70px"
+                    height="70px"
+                    className="!block lg:!hidden"
+                  />
                   <div className="hidden sm:block sm:ml-4">
                     <div className="flex space-x-2">
                       {/* <Buy /> */}
@@ -86,7 +93,6 @@ function AppBar(): JSX.Element {
                           </NavLink>
                         </>
                       )}
-                      {/*
                       {chainId && featureEnabled(Feature.STAKING, chainId) && (
                         <NavLink href={'/stake'}>
                           <a
@@ -96,12 +102,12 @@ function AppBar(): JSX.Element {
                             {i18n._(t`Stake`)}
                           </a>
                         </NavLink>
-                      )} */}
+                      )}
                     </div>
                   </div>
                 </div>
 
-                <div className="fixed bottom-0 left-0 z-10 flex flex-row items-center justify-center w-full p-4 lg:w-auto bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
+                <div className="block lg:fixed bottom-0 left-0 z-10 flex flex-row items-center justify-center w-full lg:p-4 lg:w-auto bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
                   <div className="flex items-center justify-between w-full space-x-2 sm:justify-end">
                     {chainId && [ChainId.ETHEREUM].includes(chainId) && library && library.provider.isMetaMask && (
                       <>
@@ -204,7 +210,7 @@ function AppBar(): JSX.Element {
                     <div className="w-auto flex items-center rounded-md bg-dark-700 hover:bg-dark-800 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto">
                       {account && chainId && userEthBalance && (
                         <>
-                          <div className="px-3 py-2 text-primary text-bold">
+                          <div className="px-3 py-2 text-primary text-bold hidden lg:block">
                             {userEthBalance?.toSignificant(4)} {NATIVE[chainId].symbol}
                           </div>
                         </>
@@ -219,7 +225,7 @@ function AppBar(): JSX.Element {
                 </div>
                 <div className="flex -mr-2 sm:hidden">
                   {/* Mobile menu button */}
-                  <div className="block mr-2 md:hidden">
+                  <div className="block mr-2 ml-2 md:hidden">
                     <LanguageSwitch />
                   </div>
                   <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-high-emphesis focus:outline-none">
@@ -310,7 +316,7 @@ function AppBar(): JSX.Element {
                     </Link>
                   </>
                 )}
-                {/*
+
                 {chainId && featureEnabled(Feature.STAKING, chainId) && (
                   <Link href={'/stake'}>
                     <a
@@ -321,7 +327,6 @@ function AppBar(): JSX.Element {
                     </a>
                   </Link>
                 )}
-                */}
                 {chainId && featureEnabled(Feature.ANALYTICS, chainId) && (
                   <ExternalLink
                     id={`analytics-nav-link`}
