@@ -36,14 +36,12 @@ function AppBar(): JSX.Element {
             <div className="px-4 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center flex-row-reverse lg:flex-row">
-                  <Image src="/logo.png" alt="123Swap" width="190px" height="50px" className="!hidden lg:!block" />
-                  <Image
-                    src="/logo-mobile.png"
-                    alt="123Swap"
-                    width="70px"
-                    height="70px"
-                    className="!block lg:!hidden"
-                  />
+                  <div className="!hidden lg:!block">
+                    <Image src="/logo.png" alt="123Swap" width="190px" height="50px" />
+                  </div>
+                  <div className="!block lg:!hidden">
+                    <Image src="/logo-mobile.png" alt="123Swap" width="70px" height="70px" />
+                  </div>
                   <div className="hidden sm:block sm:ml-4">
                     <div className="flex space-x-2">
                       {/* <Buy /> */}
