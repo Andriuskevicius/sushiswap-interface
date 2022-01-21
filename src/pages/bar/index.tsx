@@ -161,7 +161,7 @@ export default function Stake() {
   )
 
   return (
-    <Container id="bar-page" className="py-4 md:py-8 lg:py-12" maxWidth="full">
+    <Container id="bar-page" className="p-4 md:py-8 lg:py-12" maxWidth="full">
       <Head>
         <title key="title">Stake | 123Swap</title>
         <meta
@@ -258,7 +258,7 @@ export default function Stake() {
             </div>
             <div>
               <TransactionFailedModal isOpen={modalOpen} onDismiss={() => setModalOpen(false)} />
-              <div className="w-full max-w-xl px-3 pt-2 pb-6 rounded bg-dark-900 md:pb-9 md:pt-4 md:px-8">
+              <div className="w-full max-w-xl px-3 pt-2 pb-6 rounded bg-dark-900 md:pb-9 md:pt-4 md:px-8 border border-bcolor">
                 <div className="flex w-full rounded h-14 bg-dark-800">
                   <div
                     className="h-full w-6/12 p-0.5"
@@ -383,7 +383,7 @@ export default function Stake() {
             </div>
           </div>
           <div className="w-full max-w-xl mx-auto md:mx-0 md:ml-6 md:block md:w-72">
-            <div className="flex flex-col w-full px-4 pt-6 pb-5 rounded bg-dark-900 md:px-8 md:pt-7 md:pb-9">
+            <div className="flex flex-col w-full px-4 pt-6 pb-5 rounded bg-dark-900 md:px-8 md:pt-7 md:pb-9 border border-bcolor">
               <div className="flex flex-wrap">
                 <div className="flex flex-col flex-grow md:mb-14">
                   <p className="mb-3 text-lg font-bold md:text-2xl md:font-medium text-high-emphesis">

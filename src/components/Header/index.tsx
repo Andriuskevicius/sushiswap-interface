@@ -106,7 +106,7 @@ function AppBar(): JSX.Element {
                 </div>
 
                 <div className="block lg:fixed bottom-0 left-0 z-10 flex flex-row items-center justify-center w-full lg:p-4 lg:w-auto bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
-                  <div className="flex items-center justify-between w-full space-x-2 sm:justify-end">
+                  <div className="flex items-center justify-center w-full space-x-2 sm:justify-end">
                     {chainId && [ChainId.ETHEREUM].includes(chainId) && library && library.provider.isMetaMask && (
                       <>
                         <QuestionHelper text={i18n._(t`Add xSUSHI to your MetaMask wallet`)}>
